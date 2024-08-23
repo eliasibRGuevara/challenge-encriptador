@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="body">
+    <header class="header">
+        <img src="./assets/logo.png" alt="Icono Alura" class="header__icono">
+    </header>
+    <main class="main">
+        <section class="presentacion">
+            <div class="presentacion__textarea">
+                <textarea type="text" id="tomar__texto" class="presentacion__texto"></textarea>
+            </div>
+            <div class="presentacion__digitar__texto">
+                    <div class="presentacion__digitar__texto__advertencia">
+                        <img src="/assets/icono-advertencia.png" alt="Icono Advertencia" class="presentacion__digitar__texto__advertencia__icono">    
+                        <p class="presentacion__digitar__texto__advertencia__texto"></p>
+                    </div>
+                    <div class="presentacion__digitar__texto__botones">
+                        <button onclick="encriptar()" class="container__boton">Encriptar</button>
+                        <button onclick="desencriptar()" class="container__boton">Desencriptar</button>
+                    </div>
+            </div>
+        </section>
+        <section class="presentacion__ver__texto__encriptado">
+            <div class="contenido__inicio__encriptado">
+                <img src="./assets/imagen-inicio-encriptado.png" alt="Imagen joven con lupa" class="imagen__inicio__encriptado">
+                <div class="textos__inicio__encriptado">
+                    <h1 class="titulo__inicio__encriptado"></h1>
+                <p class="texto__inicio__encriptado"></p>
+                </div>
+                
+            </div>   
+            <button  class="container__boton__copiar">Copiar</button>
+        </section> 
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,341 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+/*Desktops*/
+:root{
+    --color-fondo: #E5E5E5;
+    --color-primario: #0A3871;
+    --color-segundario: #495057;
+
+    --fuente-inter: 'Inter', sans-serif;
+    
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    box-sizing: border-box;
+    background-color: var(--color-fondo);
+
+}
+
+.main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 1.9rem;
+    padding: 5%;
+    position: absolute;
+    padding-left: 10%;
+}
+
+.header{
+    padding: 2% 0% 0% 5%;
+}
+
+.header__icono{
+    width: 48px;
+    height: 48px;
+}
+
+.presentacion{
+    padding: 5% 20%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.presentacion__textarea{
+    width: 43.9rem; 
+    height: 40.9rem; 
+}
+
+
+.presentacion__texto{
+    font-family: var(--fuente-inter);
+    font-weight: 600;
+    font-size: 2rem;
+    color: var(--color-primario);
+    width: 100%; 
+    height: 80%; 
+    padding: 10px; 
+    cursor: pointer;
+    background-color: var(--color-fondo);
+    resize: none;
+    border: none; 
+    outline: none; 
+    
+}
+
+.presentacion__texto::placeholder{
+    color: var(--color-primario);
+    border: none;
+    
+}
+
+.presentacion__digitar__texto{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+
+.presentacion__digitar__texto__advertencia{
+    height: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.presentacion__digitar__texto__advertencia__icono{
+    padding-left: 1%;
+    height: 16px;
+    width: 16px;
+}
+
+.presentacion__digitar__texto__advertencia__texto{
+    font-family: var(--fuente-inter);
+    font-weight: 600;
+    font-size: 0.75rem;
+    color: var(--color-segundario);
+}
+
+.presentacion__digitar__texto__botones{
+    padding-left: 1%;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.container__boton{
+    width: 328px;
+    height: 67px;
+    border-radius: 24px;
+    background-color: var(--color-primario);
+    color: white;
+    
+}
+
+.container__boton:hover {
+    background-color: #07274d;
+    color: white;
+}
+
+.container__boton:disabled{
+    background: #D8DFE8;
+    color: var(--color-primario);
+}
+
+.presentacion__ver__texto__encriptado{
+    height: 100%;
+    width: 400px;
+    background: white;
+    border-radius: 32px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 10%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra que da el efecto de elevación */
+}
+
+.contenido__inicio__encriptado{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 80%;
+    text-align: center;
+    gap: 32px;
+}
+
+.imagen__inicio__encriptado{
+    width: 21rem;
+    height: 19rem;
+    padding-top: 15.2rem;
+    padding-bottom: 32px;
+    align-items: center;
+}
+
+.textos__inicio__encriptado{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.titulo__inicio__encriptado{
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #343A40;
+}
+
+.texto__inicio__encriptado{
+    font-family: var(--fuente-inter);
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--color-segundario);
+}
+
+.container__boton__copiar{
+    width: 336px;
+    height: 67px;
+    border-color: var(--color-primario);
+    border-radius: 24px;
+    background: white;
+    color: var(black);
+    margin-bottom: 32px;
+    display: none;
+}
+
+.container__boton__copiar:hover{
+    width: 336px;
+    height: 67px;
+    border-color: var(--color-primario);
+    border-radius: 24px;
+    background: rgb(196, 196, 255);
+    color: black;
+    margin-bottom: 32px;
+    display: none;
+}
+/*Tablets*/
+@media (max-width: 768px) {
+    .main{
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 64px;
+        width: 100%;
+        height: auto;
+    }
+
+    .presentacion {
+        padding: 5% 10%;
+    }
+
+    .presentacion__textarea {
+        width: 43rem;
+        height: 34.5rem;
+    }
+
+    .presentacion__texto {
+        font-size: 2rem;
+    }
+
+    .container__boton {
+        width: 100%;
+        height: 67px;
+    }
+
+    .presentacion__ver__texto__encriptado {
+        width: 100%;
+        padding: 16px;
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        gap: 32px;
+      
+    }
+
+    .contenido__inicio__encriptado {
+        height: auto;
+        width: 100%;
+        padding: 32px;
+    }
+
+    .imagen__inicio__encriptado {
+       display: none;
+    }
+
+
+    .texto__inicio__encriptado {
+        font-size: 1.25rem;
+        text-align: center;
+    }
+
+    .container__boton__copiar{
+        display: none;
+    }
+}
+
+/*Mobile*/
+@media (max-width: 430px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    .main {
+        width: 100%;
+        padding: 16px;
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        gap: 32px;
+    }
+
+    .header {
+        width: 100%;
+        
+        margin-bottom: 16px;
+    }
+
+    .presentacion {
+        width: 100%;
+        gap: 16px;
+    }
+
+    .presentacion__textarea {
+        width: 100%;
+        height: auto;
+        min-height: 200px;
+    }
+
+    .presentacion__texto {
+        font-size: 1.5rem;
+        padding: 16px;
+        line-height: 1.5;
+        height: 100%;
+    }
+
+    .presentacion__digitar__texto__botones {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+    }
+
+    .container__boton {
+        width: 100%;
+        height: 50px;
+    }
+
+    .presentacion__ver__texto__encriptado {
+        width: 100%;
+        padding: 16px;
+        background-color: white;
+        border-radius: 16px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: left;
+        gap: 32px;
+        margin-left: 10%;
+    }
+
+    .contenido__inicio__encriptado {
+        width: 100%;
+        height: 100%;
+    }
+
+    .texto__inicio__encriptado {
+        font-size: 1.25rem;
+        line-height: 1.5;
+    }
+
+  
+    .container__boton__copiar {
+        width: 100%;
+        height: 50px;
+        margin-top: 16px;
+        display: none;
+    }
+}
